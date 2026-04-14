@@ -1,0 +1,99 @@
+{
+  "default": {
+    "seed": 7,
+    "iterations": 350
+  },
+  "locations": [
+    {
+      "name": "cytosol",
+      "min_degree": 1,
+      "center": [0.0, 0.0, 0.0],
+      "repulsion_strength": 1.0,
+      "constraint": {"type": "EllipsoidShellConstraint", "params": {"axes": [15000.0, 13000.0, 13000.0], "outer": 1.5, "wall": 500000}}
+    },
+    {
+      "name": "endoplasmicreticulum",
+      "min_degree": 1,
+      "center": [0.0, 0.0, 0.0],
+      "repulsion_strength": 1.0,
+      "constraint": {"type": "ShellConstraint", "params": {"inner_radius": 4040.0, "outer_radius": 5000.0, "wall": 5000}}
+    },
+    {
+      "name": "golgiapparatus",
+      "min_degree": 1,
+      "center": [0.0, 0.0, 6000.0],
+      "repulsion_strength": 1.0,
+      "constraint": {"type": "EllipsoidConstraint", "params": {"axes": [1500.0, 600.0, 400.0], "wall": 5000}}
+    },
+    {
+      "name": "centrosome",
+      "min_degree": 1,
+      "center": [0.0, 0.0, 5200.0],
+      "repulsion_strength": 1.0,
+      "constraint": {"type": "CylinderConstraint", "params": {"radius": 115.0, "height": 500.0, "wall": 5000}}
+    },
+    {
+      "name": "intermediatefilaments",
+      "min_degree": 1,
+      "center": [0.0, 0.0, 0.0],
+      "repulsion_strength": 1.0,
+      "constraint": {"type": "EllipsoidConstraint", "params": {"axes": [9500.0, 7500.0, 7500.0], "wall": 5000}}
+    },
+    {
+      "name": "microtubules",
+      "min_degree": 1,
+      "center": [0.0, 0.0, 0.0],
+      "repulsion_strength": 1.0,
+      "constraint": {"type": "EllipsoidConstraint", "params": {"axes": [9500.0, 7500.0, 7500.0], "wall": 5000}}
+    },
+    {
+      "name": "actinfilaments",
+      "min_degree": 1,
+      "center": [0.0, 0.0, 0.0],
+      "repulsion_strength": 1.0,
+      "constraint": {"type": "EllipsoidShellConstraint", "params": {"axes": [9800.0, 7800.0, 7800.0], "outer": 1.020408, "wall": 500000}}
+    },
+    {
+      "name": "plasmamembrane",
+      "min_degree": 1,
+      "center": [0.0, 0.0, 0.0],
+      "repulsion_strength": 1.0,
+      "constraint": {"type": "EllipsoidShellConstraint", "params": {"axes": [10000.0, 8000.0, 8000.0], "outer": 1.1, "wall": 500000}}
+    },
+    {
+      "name": "nucleoplasm",
+      "min_degree": 1,
+      "center": [0.0, 0.0, 0.0],
+      "repulsion_strength": 7.0,
+      "constraint": {"type": "SphereConstraint", "params": {"radius": 4000.0, "wall": 5000}}
+    },
+    {
+      "name": "nuclearmembrane",
+      "min_degree": 1,
+      "center": [0.0, 0.0, 0.0],
+      "repulsion_strength": 1.0,
+      "constraint": {"type": "ShellConstraint", "params": {"inner_radius": 4000.0, "outer_radius": 4040.0, "wall": 5000}}
+    },
+    {
+      "name": "mitochondria",
+      "min_degree": 1,
+      "center": [-5500.0, 2000.0, 0.0],
+      "repulsion_strength": 1.0,
+      "constraint": {"type": "EllipsoidConstraint", "params": {"axes": [325.0, 325.0, 650.0], "wall": 5000}}
+    },
+    {
+      "name": "primarycilium",
+      "min_degree": 1,
+      "center": [0.0, 0.0, 8500.0],
+      "repulsion_strength": 1.0,
+      "constraint": {"type": "CylinderConstraint", "params": {"radius": 125.0, "height": 1000.0, "wall": 5000}}
+    },
+    {
+      "name": "nucleoli",
+      "min_degree": 1,
+      "center": [900.0, 800.0, 200.0],
+      "repulsion_strength": 2.0,
+      "constraint": {"type": "SphereConstraint", "params": {"radius": 600.0, "wall": 5000}}
+    }
+  ]
+}
